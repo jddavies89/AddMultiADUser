@@ -1,0 +1,31 @@
+Modules loaded.
+Creating user user at 27-4-15 11:2:18
+Configuring the User principal name.
+user.name@theregisschool.co.uk
+Finished configuring the User principal name.
+Configuring the User email address.
+username1@contoso.com
+Finished configuring the User email address.
+Configuring the user's home directory.
+\\Server\students$\intake14\username1
+Finished configuring the users home directory.
+Configuring the user's OU location.
+OU=Students,OU=Users,DC=contoso,DC=com
+Finsihed configuring the user's OU location.
+Configuring the user's description.
+Student - 27-4-15
+Finished configuring the user's description.
+Creating the user account in Active Directory.
+Finished crating the user account in Active Directory.
+Configuring the user's attributes
+Finished configuring the user's attributes.
+Adding the user to the specified groups.
+Finished adding the user to the specified groups.
+Creating the user's home directory.
+\\Server\students$\intake14\username1
+Home drive created for username1.
+Finished creating the user's home directory.
+Creating the security permissions on the user's home directory.
+Created security on \\Server\students$\intake14\username1
+Finished creating the security permissions on the user's home directory.
+Finished creating the user user at 27-4-15 11:2:18

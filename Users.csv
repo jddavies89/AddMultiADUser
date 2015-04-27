@@ -1,0 +1,3 @@
+Username,Enabled,GivenName,Surname,Area
+uname,TRUE,user,name,Student
+unames,TRUE,users,names,Staff

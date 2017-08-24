@@ -1,0 +1,38 @@
+
+        New student account created at 24-Aug-2017 14:32.
+    
+        Creator is @{username=[Domain\AdminUsername]}</h3>
+        Username is [Username].
+        Fullname is [FullName].
+        Display name is [FullName].
+        The SamAccountName is [Username].
+        The UserPrincipalName is firstname.surname@theregisschool.co.uk.
+        ChangePasswordAtLogon is true.  
+        Account Enabled is true.
+        Description is [Description].
+        Profile path is \\FileServer\Share$\Mandatory.
+        homeDirectory is \\FileServer\Share$\intake17\[Username] and has to be created manually!!!!!!!!!!!
+        Company is [Company]
+        Department is [Department]
+        The HomeDrive is [Letter]:.
+
+
+     24-8-17 2:32:11
+
+        
+        New student account created at 24-Aug-2017 14:32.
+    
+        Creator is @{username=[Domain\AdminUsername]}</h3>
+        Username is [Username].
+        Fullname is [FullName].
+        Display name is [FullName].
+        The SamAccountName is [Username].
+        The UserPrincipalName is firstname.surname@theregisschool.co.uk.
+        ChangePasswordAtLogon is true.  
+        Account Enabled is true.
+        Description is [Description].
+        Profile path is \\FileServer\Share$\Mandatory.
+        homeDirectory is \\FileServer\Share$\intake17\[Username] and has to be created manually!!!!!!!!!!!
+        Company is [Company]
+        Department is [Department]
+        The HomeDrive is [Letter]:.

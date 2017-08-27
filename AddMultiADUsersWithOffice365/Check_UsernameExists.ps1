@@ -5,7 +5,7 @@
    Author: Joe Richards
    Date:   24/08/2017
 .LINK
-  https://github.com/joer89/AddMultiADUser/
+  https://github.com/joer89/AddMultiADUser.git
 #>
 
 param(

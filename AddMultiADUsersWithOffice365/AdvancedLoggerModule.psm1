@@ -26,7 +26,7 @@
    Author: Joe Richards
    Date:   09/02/2017
 .LINK
-  https://github.com/joer89/Logging/AdvancedModuleLogToFile
+  https://github.com/joer89/AddMultiADUser.git
 #>
 
 

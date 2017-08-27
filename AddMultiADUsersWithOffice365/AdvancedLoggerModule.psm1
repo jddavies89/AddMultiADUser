@@ -29,7 +29,6 @@
   https://github.com/joer89/AddMultiADUser.git
 #>
 
-
 function Log-ToFile {
 
 [CmdletBinding(SupportsShouldProcess=$true)]        

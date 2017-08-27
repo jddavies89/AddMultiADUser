@@ -10,7 +10,7 @@
    Author: Joe Richards
    Date: 02/Feb/2017
 .LINK
-  https://github.com/joer89/Logging
+  https://github.com/joer89/AddMultiADUser.git
 #>
 function checkFolder{
 

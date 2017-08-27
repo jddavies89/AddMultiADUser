@@ -26,7 +26,7 @@ function check_ADName(){
         #Stores the searched username.
         $User = Get-ADUser -LDAPFilter "(sAMAccountName=$Username)"
         #Checks to see if there is a match.
-        if ($Username -eq (Get-ADUser -Filter 'Name -like "*SvcAccount"' | FT Name -A)){
+        if ($Username -eq (Get-ADUser -Filter 'Name -like "$($User)"' | FT Name -A)){
             #If there is a match, Write to screen and store the username in the array $duplicateNames.
             Write-Host "Duplicate username in Active Directory >>> $($Username)" -ForegroundColor Red
             #Stores the username in the array duplicateNames.

@@ -1,17 +1,26 @@
-﻿############################################################
-##
-##Author by Joe Richards
-##
-##This is a simple logging module example with capabilities to 
-##          *Log at startup. 
-##          *Log on close.
-##          *Delete the log.
-##          *Check the log file.
-##          *Open the log file.
-##          *Add text to the log on user input.
-##          *Logs if the module has been loaded. 
-##
-##############################################################
+<#
+.Synopsis
+   This script is a logging module.
+.DESCRIPTION    
+    This script create a file called log.log in the current working directory.
+    
+    This is a simple logging module with capabilities to 
+          *Log at startup. 
+          *Log on close.
+          *Delete the log.
+          *Check the log file.
+          *Open the log file.
+          *Add text to the log on user input.
+          *Logs if the module has been loaded. 
+
+.EXAMPLE
+
+.Notes
+   Author: Joe Richards
+   Date:   2015
+.LINK
+  https://github.com/joer89/AddMultiADUser.git
+#>
 
 #Stores the log file details.
 param(

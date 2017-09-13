@@ -25,8 +25,8 @@
 .LINK
   https://github.com/joer89/AddMultiADUser.git
 #>
- 
- #Start function.
+
+#Start function.
 #Creates the user's home directory. 
 function CreateSecurityPermissionsOnHomeDirectory(){
     if($Area.ToLower() -eq "staff"){

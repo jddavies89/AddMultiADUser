@@ -20,7 +20,6 @@
         configureAttribute; edits attribute editor details of each user.
         configureGroups; adds the security and distribution groups for each users.
 
-
     For a list of parameters in runtime;
         get-help GetMeTenancyDisplay -Parameter *
         get-help GetMeTenancyWrite -Parameter *

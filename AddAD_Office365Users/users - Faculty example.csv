@@ -1,0 +1,5 @@
+Username,Enabled,GivenName,Surname,Intake,Area,Department,StudentYear
+finusr1,TRUE,Finance,Usr1,,Faculty,Finance,
+mathusr2,TRUE,Math,Usr2,,Faculty,Math,
+engusr2,TRUE,English,Usr3,,Faculty,english,
+admusr3,TRUE,Finance,Usr4,,Faculty,Admin,

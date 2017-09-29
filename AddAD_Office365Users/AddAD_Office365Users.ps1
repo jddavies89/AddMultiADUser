@@ -524,8 +524,8 @@ function addSellectedEdcuStudentUsr($user){
 #Delta Sync
 function runDeltaSync{
     write-host "Running 'DELTA' synch, which is the 6 different stages..."
-    $pass = ConvertTo-SecureString -AsPlainText LetmePa55! -Force
-    $Cred = New-Object System.Management.Automation.PSCredential -ArgumentList regis\administrator,$pass
+    $pass = ConvertTo-SecureString -AsPlainText Passw0rd -Force
+    $Cred = New-Object System.Management.Automation.PSCredential -ArgumentList domain\admin,$pass
     Invoke-Command -ComputerName trs-dc2012-2 -Credential $cred -Scriptblock {Start-ADSyncSyncCycle -PolicyType Delta}
     write-host "...DELTA synch will take approximately 1 minute."
     Start-Sleep -s 60

@@ -19,6 +19,7 @@
         configureOUPath; speciffy your OU for storing faculty and students.
         configureAttribute; edits attribute editor details of each user.
         configureGroups; adds the security and distribution groups for each users.
+        ProxyAddresses; Change the proxy addresses to suit your tenancy.
 
     For a list of parameters in runtime;
         get-help GetMeTenancyDisplay -Parameter *
@@ -294,7 +295,13 @@ function createUsers($csvFilePath){
 
             #Add the Users the the correct Groups
             $Groups = configureGroups($Area)($Username)($Department)($StudentYr)
-            Write-Host $Groups -ForegroundColor Magenta             
+            Write-Host $Groups -ForegroundColor Magenta  
+            
+            #Set the proxy address for the user.
+            $ProxyAddr = setProxyAddress($Username)($GivenName)($Surname) 
+            Write-Host $ProxyAddr -ForegroundColor Magenta    
+            #Logs to .\userlog.log with text.
+            Log-ToFile -Path .\ -fileName userlog.log -SimpleLogging -Text $ProxyAddr.ToString()               
         }
 
         Write-Host "Finished importing CSV file: $($csvFilePath)" -ForegroundColor Magenta
@@ -442,6 +449,19 @@ function configureGroups($Area, $Username, $Department, $StudentYr){
 
 }#End Function
 
+#Set the proxy addresses.
+function setProxyAddress($Username, $GivenName, $Surname){
+
+    $proxy1 = "SMTP:$($GivenName).$($Surname)@tenancy.co.uk"
+    $proxy2 = "smtp:$($GivenName).$($Surname)@tenancy.mail.onmicrosoft.com"
+    $proxy3 = "smtp:$($GivenName.SubString(0,1))$($Surname)@tenancy.co.uk"
+
+    Get-ADUser $Username | set-aduser -Add @{Proxyaddresses="$proxy1" }
+    Get-ADUser $Username | set-aduser -Add @{Proxyaddresses="$proxy2" }
+    Get-ADUser $Username | set-aduser -Add @{Proxyaddresses="$proxy3" }
+
+    return "Added proxy addresses for $($Username)."
+}
 
 #endregion
 

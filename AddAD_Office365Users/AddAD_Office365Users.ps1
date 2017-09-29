@@ -20,7 +20,8 @@
         configureAttribute; edits attribute editor details of each user.
         configureGroups; adds the security and distribution groups for each users.
         ProxyAddresses; Change the proxy addresses to suit your tenancy.
-
+        Delta Sync; Change the Invoke-command credentials for Delta Sync.
+        
     For a list of parameters in runtime;
         get-help GetMeTenancyDisplay -Parameter *
         get-help GetMeTenancyWrite -Parameter *
@@ -526,7 +527,7 @@ function runDeltaSync{
     write-host "Running 'DELTA' synch, which is the 6 different stages..."
     $pass = ConvertTo-SecureString -AsPlainText Passw0rd -Force
     $Cred = New-Object System.Management.Automation.PSCredential -ArgumentList domain\admin,$pass
-    Invoke-Command -ComputerName trs-dc2012-2 -Credential $cred -Scriptblock {Start-ADSyncSyncCycle -PolicyType Delta}
+    Invoke-Command -ComputerName AzureServer -Credential $cred -Scriptblock {Start-ADSyncSyncCycle -PolicyType Delta}
     write-host "...DELTA synch will take approximately 1 minute."
     Start-Sleep -s 60
 }#End function

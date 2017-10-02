@@ -23,8 +23,7 @@
         Delta Sync; Change the Invoke-command credentials for Delta Sync.
         
     For a list of parameters in runtime;
-        get-help GetMeTenancyDisplay -Parameter *
-        get-help GetMeTenancyWrite -Parameter *
+        get-help AddNewUser -Parameter *
 
     Modules:
         MSOnline

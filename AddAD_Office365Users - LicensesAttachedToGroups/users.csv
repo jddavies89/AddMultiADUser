@@ -1,0 +1,4 @@
+Username,Enabled,GivenName,Surname,Intake,Area,Department,StudentYear,O365License
+finusr1,TRUE,Finance,Usr1,,Faculty,Finance,,Admin
+mathusr2,TRUE,Math,Usr2,,Faculty,Math,,Staff
+stutest1,TRUE,Student,test1,intake17,Student,,7,Student

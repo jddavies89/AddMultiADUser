@@ -1,0 +1,4 @@
+Username,Enabled,GivenName,Surname,Intake,Area,Department,StudentYear
+studentusr1,TRUE,Student,Usr1,Intake17,Student,,7
+StudentUsr2,TRUE,Student,Usr2,Intake16,Student,,8
+StudentUsr3,TRUE,Student,Usr3,Intake15,Student,,9
